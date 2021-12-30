@@ -31,7 +31,11 @@ body {
 
 .swiper {
   width: 100%;
-  height: 500px;
+  height: 700px;
+}
+
+.swiper * {
+  user-select: none;
 }
 
 .swiper-slide {
