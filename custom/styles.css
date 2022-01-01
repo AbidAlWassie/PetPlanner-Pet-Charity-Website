@@ -78,3 +78,15 @@ body {
 .dropdownContainer {
   z-index: 100000;
 }
+
+*:focus {
+  outline: 0 !important;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: 0;
+}
