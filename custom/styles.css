@@ -89,4 +89,5 @@ button:focus {
 .side-img {
   height: 300px !important;
   width: 300px !important;
+  /* margin-top: 10px; */
 }
