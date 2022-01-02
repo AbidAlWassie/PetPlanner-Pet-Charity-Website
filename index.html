@@ -41,6 +41,7 @@
         </div>
         <!-- Searchbar End -->
 
+        
         <ul class="nav-links flex flex-row">
           <li><a href="javascript:void(0)" class="text-white font-semibold text-2xl mt-2 hidden lg:inline">Explore</a></li>
 
@@ -89,7 +90,7 @@
         </ul>
 
 <!-- Hamburger Menu Button End -->
-        <div class="-mr-2 flex lg:hidden">
+        <div class="-mr-2 flex lg:hidden" onclick="navToggle()">
           <!-- Mobile menu button -->
           <button id="navBtn" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -112,7 +113,69 @@
           </button>
           <!-- Mobile menu button end -->
         </div>
-        <!-- Hamburger Menu Button End -->
+<!-- Hamburger Menu Button End -->
+
+<!-- Mobile Nav Start -->
+<a id="navBtn" onclick="navToggle()" class="text-white font-semibold text-2xl mt-2 dropdown  hidden lg:inline">
+  <div class="dropdownContainer relative inline-block text-left ml-5">
+    <div>
+      <div class="-mr-2 flex lg:hidden">
+        <!-- Mobile menu button -->
+        <button id="navBtn" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Heroicon name: outline/menu
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <!--
+            Heroicon name: outline/x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <!-- Mobile menu button end -->
+      </div>
+    </div>
+
+    <!--
+      Dropdown menu, show/hide based on menu state.
+
+      Entering: "transition ease-out duration-100"
+        From: "transform opacity-0 scale-95"
+        To: "transform opacity-100 scale-100"
+      Leaving: "transition ease-in duration-75"
+        From: "transform opacity-100 scale-100"
+        To: "transform opacity-0 scale-95"
+    -->
+    <div id="navMenu" class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-700 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <div class="py-1" role="none">
+        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
+      </div>
+      <div class="py-1" role="none">
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
+      </div>
+      <div class="py-1" role="none">
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
+      </div>
+      <div class="py-1" role="none">
+        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+      </div>
+    </div>
+  </div>
+</a>
+<!-- Mobile Nav End -->
+
       </div>
     </nav>
     <!-- Nav End -->
