@@ -25,7 +25,7 @@
         </div>
 
         <!-- Searchbar Start -->
-        <div class="pt-2 relative mx-auto text-gray-100">
+        <div class="pt-2 relative mx-auto text-gray-100 hidden lg:block">
           <input class="search-bar border-2 border-gray-700 bg-gray-900 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
             type="search" name="search" placeholder="Search">
           <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
@@ -41,9 +41,9 @@
         <!-- Searchbar End -->
 
         <ul class="nav-links flex flex-row">
-          <li><a href="javascript:void(0)" class="text-white font-semibold text-2xl mt-2">Explore</a></li>
+          <li><a href="javascript:void(0)" class="text-white font-semibold text-2xl mt-2 hidden lg:inline">Explore</a></li>
 
-          <li><a id="optBtn" onclick="optToggle()" class="text-white font-semibold text-2xl mt-2 dropdown">
+          <li><a id="optBtn" onclick="optToggle()" class="text-white font-semibold text-2xl mt-2 dropdown  hidden lg:inline">
             <div class="dropdownContainer relative inline-block text-left ml-5">
               <div>
                 <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-800 shadow-sm px-4 py-2 bg-gray-900 text-sm font-medium text-gray-100 hover:bg-gray-800 focus:outline-none" id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -87,6 +87,31 @@
 
         </ul>
 
+<!-- Hamburger Menu Button End -->
+        <div class="-mr-2 flex lg:hidden">
+          <!-- Mobile menu button -->
+          <button id="navBtn" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Heroicon name: outline/menu
+
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <!--
+              Heroicon name: outline/x
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <!-- Mobile menu button end -->
+        </div>
+        <!-- Hamburger Menu Button End -->
       </div>
     </nav>
     <!-- Nav End -->
