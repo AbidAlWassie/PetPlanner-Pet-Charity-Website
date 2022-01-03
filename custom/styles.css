@@ -8,6 +8,7 @@ body {
 }
 
 .navbar {
+  transition: 300ms ease-in-out;
 }
 
 .nav-links {
@@ -109,8 +110,10 @@ button:focus {
 }
 
 .navbar.sticky {
-  padding: 0 0;
-  background: #111827;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  /* padding: 0 0; */
+  /* background: #111827; */
 }
 
 .sticky {
