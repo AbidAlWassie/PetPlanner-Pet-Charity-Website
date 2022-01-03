@@ -115,6 +115,8 @@
         </div>
 <!-- Hamburger Menu Button End -->
 
+
+
 <!-- Mobile Nav Start -->
 <a id="navBtn" onclick="navToggle()" class="text-white font-semibold text-2xl mt-2 dropdown hidden lg:inline">
   <div class="dropdownContainer relative inline-block text-left ml-5">
@@ -154,24 +156,16 @@
         From: "transform opacity-100 scale-100"
         To: "transform opacity-0 scale-95"
     -->
-    <div id="navMenu" class="hidden origin-top-right absolute right-0 mt-10 w-56 rounded-md shadow-lg bg-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-700 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-      <div class="py-1" role="none">
-        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
-      </div>
-      <div class="py-1" role="none">
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
-      </div>
-      <div class="py-1" role="none">
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
-      </div>
-      <div class="py-1" role="none">
-        <a href="javascript:void(0)" class="text-gray-100 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+    <!-- Dropdown Start -->
+    <div id="navMenu" class="overlay">
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
     </div>
+    <!-- Dropdown End -->
   </div>
 </a>
 <!-- Mobile Nav End -->
