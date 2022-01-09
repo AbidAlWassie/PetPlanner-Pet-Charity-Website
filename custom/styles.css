@@ -12,11 +12,22 @@ body {
 }
 
 .nav-links {
-  margin: 2px auto;
+  /* margin: 2px auto; */
 }
 
 .search-bar {
   width: 20rem;
+}
+
+.navBtnContainer {
+  margin: 0 0 0 auto;
+}
+
+.navBtn {
+  justify-content: left;
+  align-items: flex-end;
+  float: left;
+  margin: 0 0 0 auto;
 }
 
 /* section {
