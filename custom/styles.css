@@ -211,3 +211,28 @@ button:focus {
 .nh {
   height: 0%;
 }
+
+.swiper-slide {
+  display: flex;
+}
+
+.slider-content:nth-child(1) {
+  position: absolute;
+  right: -500px;
+}
+
+.text1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.text2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  max-width: 700px;
+  margin: 0 auto 15px auto;
+}

@@ -524,6 +524,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -627,6 +632,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-y-1\/3 {
   --tw-translate-y: 33.333333%;
+  transform: var(--tw-transform);
+}
+
+.rotate-12 {
+  --tw-rotate: 12deg;
+  transform: var(--tw-transform);
+}
+
+.-rotate-12 {
+  --tw-rotate: -12deg;
+  transform: var(--tw-transform);
+}
+
+.-rotate-2 {
+  --tw-rotate: -2deg;
+  transform: var(--tw-transform);
+}
+
+.-rotate-3 {
+  --tw-rotate: -3deg;
   transform: var(--tw-transform);
 }
 
@@ -839,6 +864,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-left {
