@@ -15,4 +15,9 @@
     const navMenu = document.querySelector("#navMenu");
     navMenu.classList.toggle("fh");
   }
+
+  function hideTxt() {
+    const notice1 = document.getElementById("notice1");
+    notice1.classList.add("hidden");
+  }
 // }
