@@ -236,3 +236,31 @@ button:focus {
   max-width: 700px;
   margin: 0 auto 15px auto;
 }
+
+.cards-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item {
+  box-sizing: border-box;
+  flex-basis: 32%;
+  border: 1px solid #424242;
+}
+
+.card-item img {
+  padding: 20px 20px;
+}
+
+.card-item h1 {
+  font-size: 1.2rem;
+}
+
+.card-item .text {
+  font-size: 0.85rem;
+  margin: 5px 40px;
+}
+
+.card-item button {
+  margin-bottom: 20px;
+}
