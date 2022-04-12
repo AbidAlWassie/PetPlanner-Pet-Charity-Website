@@ -264,3 +264,16 @@ button:focus {
 .card-item button {
   margin-bottom: 20px;
 }
+
+.newsletter {
+  border: 1px solid #27749b;
+}
+
+.newsletter .highlight {
+  background-color: #27749b;
+}
+
+.newsletter.info {
+  background-color: #27749b;
+  padding: 10px;
+}
